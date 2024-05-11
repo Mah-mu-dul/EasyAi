@@ -28,7 +28,7 @@ app.post('/chat', async (req, res) => {
         // console.log(response);
         res.send(response);
     } catch (error) {
-        res.send("Server error")
+        res.send(error)
     }
 });
 

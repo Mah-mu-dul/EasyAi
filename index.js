@@ -12,7 +12,7 @@ const PORT = 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_AI_API_KEY);
+const genAI = new GoogleGenerativeAI("AIzaSyBULyNuooWPvrJ2Q3IEN-mPhMe1_Ttcalw");
 
 app.get('/', (req, res) => {
     res.send('Hello from Express!');
